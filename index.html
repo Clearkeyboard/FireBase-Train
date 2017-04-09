@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+
+  <meta charset="UTF-8">
+  <title>Train Data Managmenet</title>
+<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body>
+<div class='jumbotron'>
+    <h1 class='text-center'>Train Time Is All The Time</h1>
+    <h3 class='text-center'>A Comprehensive Directory of Chugga Chugga and Toot Toots</h3>
+</div>
+<div class='container'>
+<div class='panel panel-primary'>
+<div class='panel-heading'>Current Train Schedule</div>
+<div class='panel-body'>
+    <table class="table">
+      <thead>
+        <tr>
+          <th>Train Name</th>
+          <th>Destination</th>
+          <th>Frequency (min)</th>
+          <th>Next Arrival</th>
+          <th>Minutes Away</th>
+        </tr>
+      </thead>
+      <tbody id='tablebody'>
+      </tbody>
+      </table>
+    </div>
+</div>
+
+<div class='panel panel-primary'>
+<div class='panel-heading'>Add Train</div>
+<div class='panel-body'>
+    <form class='form-horizontal'>
+        <br>
+    Train Name:<br>
+    <input id='name' class='form-control' type="text" name="name"><br>
+    Destination:<br>
+    <input id='dest' class='form-control'  type="text" name="destination"><br>
+    First Train Time: Must Be HH:MM 24hr format<br>
+    <input id='firsttrain' class='form-control'  type='text' name='firsttrain'><br>
+    Frequency:<br>
+    <input id='freq' class='form-control'  type='text' name='frequency'><br>
+    <button id='addbtn' type='button'>Add</button>
+    </form>
+</div>
+</div>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+<script src="https://www.gstatic.com/firebasejs/3.7.3/firebase.js"></script>
+<script src='https://cdn.jsdelivr.net/momentjs/2.12.0/moment.min.js'></script>
+<script src='assets/app.js'></script>
+</body>
+</html>
